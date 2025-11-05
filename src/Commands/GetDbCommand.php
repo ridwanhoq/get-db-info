@@ -121,5 +121,10 @@ class GetDbCommand extends Command
                 echo 'Wrong choice';
                 break;
         endswitch;
+
+
+        return 0;
+
+
     }
 }
