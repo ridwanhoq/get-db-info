@@ -2,11 +2,17 @@
 
 namespace GetDbInfo\Providers;
 
+use GetDbInfo\Commands\GetDbCommand;
 use Illuminate\Support\ServiceProvider;
-use src\Commands\GetDbCommand;
 
 class GetDbProvider extends ServiceProvider
 {
+
+
+    public function register()
+    {
+        $this->app->singleton(GetDbCommand::class);
+    }
 
     public function boot()
     {
@@ -17,12 +23,5 @@ class GetDbProvider extends ServiceProvider
                 ]);
             }
         });
-    }
-
-
-
-    public function register()
-    {
-        $this->app->singleton(GetDbCommand::class);
     }
 }

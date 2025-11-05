@@ -1,6 +1,6 @@
 <?php
 
-namespace src\Commands;
+namespace GetDbInfo\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
