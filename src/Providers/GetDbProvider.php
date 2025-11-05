@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Providers;
+namespace GetDbInfo\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use src\Commands\GetDbCommand;
